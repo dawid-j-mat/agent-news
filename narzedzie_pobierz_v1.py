@@ -19,7 +19,7 @@ def pobierz_tekst_ze_strony(url: str) -> str:
 
     zupa = BeautifulSoup(odpowiedz.text, "html.parser")
 
-    for znacznik in zupa(["script", "style"]):
+    for znacznik in zupa(["script", "style", "nav", "header", "footer", "aside"]):
         znacznik.decompose()
 
     czysty_tekst = zupa.get_text(separator="\n", strip=True)
