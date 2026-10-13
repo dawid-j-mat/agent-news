@@ -22,11 +22,9 @@ DOSTAWCY = {
 }
 
 KANDYDACI = [
-    {"dostawca": "gemini", "model": "gemini-3.8-flash", "dodatki": {"reasoning_effort": "low"}},
-    {"dostawca": "gemini", "model": "gemini-3.6-flash", "dodatki": {"reasoning_effort": "low"}},
-    {"dostawca": "ovh", "model": "Qwen3.5-397B-A17B", "dodatki": {}},
-    {"dostawca": "nvidia", "model": "z-ai/glm-5.3", "dodatki": {}},
     {"dostawca": "gemini", "model": "gemini-3.5-flash-lite", "dodatki": {"reasoning_effort": "low"}},
+    {"dostawca": "ovh", "model": "Qwen3.5-397B-A17B", "dodatki": {}},
+    {"dostawca": "nvidia", "model": "z-ai/glm-5.3-flash", "dodatki": {}},
 ]
 
 KODY_CHWILOWE = {429, 500, 502, 503, 504}
